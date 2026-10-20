@@ -11,11 +11,14 @@ public:
 
     Employee(const Employee& other);
 
+    ~Employee();
+
+    void printInfo();
+
+private:
     std::string name;
     std::string last_name;
     int age;
-
-    void printInfo();
 };
 
 #endif
